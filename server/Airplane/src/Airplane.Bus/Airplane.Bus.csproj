@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Airplane.Domain.Core\Airplane.Domain.Core.csproj" />
+    <ProjectReference Include="..\Airplane.Domain\Airplane.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
