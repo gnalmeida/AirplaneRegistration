@@ -48,7 +48,7 @@
   
         <div class="form-group">
           <div class="col-md-4 col-md-offset-2">
-            <span><button class="btn btn-primary" id="atualizarAeronave" type="submit" [disabled]='!airplaneForm.valid'>Atualizar</button></span>
+            <span><button class="btn btn-primary" id="atualizarAeronave" type="submit" [disabled]='!airplaneForm.valid || !this.airplaneForm.dirty'>Atualizar</button></span>
           </div>
         </div>
   
