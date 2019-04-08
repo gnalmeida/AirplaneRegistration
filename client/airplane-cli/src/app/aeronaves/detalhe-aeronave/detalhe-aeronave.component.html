@@ -1,0 +1,28 @@
+<div class="container main-container">
+  <h2>Detalhes da Aeronave</h2>
+  <hr />
+
+  <div class="container main-container">
+
+    <div class="container">
+      <div>
+        <div class="row">
+          <b>Código:</b><br /> {{ airplane.code }}
+        </div>
+        <br />
+        <div class="row">
+          <b>Modelo:</b><br /> {{ airplane.model }}
+        </div>
+        <br />
+        <div class="row">
+          <b>Número de passageiros:</b><br /> {{ airplane.numberOfPassengers }}
+        </div>
+        <br />
+        <div class="row">
+            <b>Data de criação:</b><br /> {{ airplane.created | date:'dd/MM/yyyy' }}
+          </div>
+          <br />
+      </div>
+    </div>
+  </div>
+</div>

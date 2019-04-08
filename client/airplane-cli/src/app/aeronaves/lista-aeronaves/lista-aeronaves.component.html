@@ -1,0 +1,44 @@
+<h2>Lista de Aeronaves</h2>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="pull-left">
+      <a class="btn btn-primary" id="novaAeronave" [routerLink]="['/nova-aeronave']">
+        <span title="Nova Aeronave" class="glyphicon glyphicon-plus-sign"></span> Nova Aeronave
+      </a>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="page-size">
+<div class="panel panel-default">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Modelo</th>
+        <th>Número de passageiros</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let airplane of airplanes'>
+        <td>{{ airplane.code }}</td>
+        <td>{{ airplane.model }}</td>
+        <td>{{ airplane.numberOfPassengers }}</td>
+        <td>
+            <a [routerLink]="['/detalhe-aeronave', airplane.id]" title="Detalhes" class="btn btn-primary">
+              <span class="glyphicon glyphicon-search"></span>
+            </a>
+            <a [routerLink]="['/editar-aeronave', airplane.id]" title="Editar" class="btn btn-primary">
+              <span class="glyphicon glyphicon-pencil"></span>
+            </a>
+            <a [routerLink]="['/excluir-aeronave', airplane.id]" title="Excluir" class="btn btn-primary">
+              <span class="glyphicon glyphicon-trash"></span>
+            </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

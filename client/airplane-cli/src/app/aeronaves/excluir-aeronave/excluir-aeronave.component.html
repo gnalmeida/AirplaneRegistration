@@ -1,0 +1,33 @@
+<div class="container main-container">
+  <h2>Excluir Aeronave</h2>
+  <h3>Tem certeza que deseja excluir a aeronave abaixo?</h3>
+  <hr />
+
+  <div class="container main-container">
+
+    <div class="container">
+      <div>
+        <div class="row">
+          <b>Código:</b><br /> {{ airplane.code }}
+        </div>
+        <br />
+        <div class="row">
+          <b>Modelo:</b><br /> {{ airplane.model }}
+        </div>
+        <br />
+        <div class="row">
+          <b>Número de passageiros:</b><br /> {{ airplane.numberOfPassengers }}
+        </div>
+        <br />
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="form-actions no-color">
+    <input type="submit" value="Excluir" class="btn btn-danger" (click)="excluirAeronave()" />
+    <a [routerLink]="['/aeronaves']" class="btn btn-primary">Voltar para a lista</a>
+  </div>
+
+</div>
